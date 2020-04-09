@@ -22,6 +22,10 @@
         background: #ff3e84;
         color: #ffffff;
       }
+
+      .hide {
+        display: none;
+      }
     </style>
   </head>
 
@@ -46,5 +50,13 @@
     <button class="fat">Ver ideia</button>
 
     <p id="footer">Implementar o roda pé</p>
+
+    <script>
+      document
+        .querySelector("button.fat")
+        .addEventListener("click", function () {
+          document.querySelector("#footer").classList.toggle("hide");
+        });
+    </script>
   </body>
 </html>
