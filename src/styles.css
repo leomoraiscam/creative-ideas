@@ -49,16 +49,25 @@ button:hover {
   text-decoration: underline;
 }
 
-.fat {
+.button {
   width: 150px;
   height: 40px;
+
   background: #ff3e84;
   color: #ffffff;
-  border-radius: 6px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
   box-shadow: 0px 8px 16px rgba(255, 0, 92, 0.16);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.fat:hover {
+.button:hover {
+  background: #0984e3;
+  color: #ffffff;
   text-decoration: none;
 }
 
