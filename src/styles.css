@@ -117,3 +117,64 @@ p,
   line-height: 24px;
   letter-spacing: 0.1px;
 }
+
+/* Modal */
+#modal {
+  width: 100vw;
+  height: 100vh;
+  background: #ff3e84;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#modal .content {
+  margin: 128px 0px 0px 0px;
+  color: #ffffff;
+}
+
+#modal .content h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#modal .content form {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto 0 auto;
+}
+
+.input-wrapper {
+  margin: 16px 0px 16px 0px;
+}
+
+form label {
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.8px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgba(141, 25, 52, 0.5);
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+}
+
+form button {
+  width: 150px;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #0984e3;
+  color: #ffffff;
+  text-decoration: none;
+}
