@@ -178,6 +178,8 @@ form button {
   background: #ffffff;
   border-radius: 6px;
   cursor: pointer;
+  grid-column: 2;
+  justify-self: end;
 }
 
 form button:hover {
