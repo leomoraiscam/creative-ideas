@@ -132,7 +132,7 @@ p,
 }
 
 #modal .content {
-  margin: 128px 0px 0px 0px;
+  margin-top: 5%;
   color: #ffffff;
 }
 
@@ -144,7 +144,7 @@ p,
 #modal .content form {
   width: 80%;
   max-width: 800px;
-  margin: 0 auto 0 auto;
+  margin: 0 auto 15% auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
@@ -215,6 +215,10 @@ form button:hover {
 #modal.hide {
   opacity: 0;
   visibility: hidden;
+}
+
+#modal.addScroll {
+  overflow: auto;
 }
 
 /* ideias.html */
