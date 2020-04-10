@@ -67,10 +67,6 @@ footer {
   letter-spacing: 0.2px;
 }
 
-.hide {
-  display: none;
-}
-
 /* last-ideas */
 .idea {
   margin: 0px 0px 20px 0px;
@@ -127,6 +123,7 @@ p,
   top: 0;
   display: flex;
   justify-content: center;
+  transition: all 400ms;
 }
 
 #modal .content {
@@ -171,6 +168,27 @@ form textarea {
   outline: none;
 }
 
+form a {
+  width: 150px;
+  height: 40px;
+  background: #ffffff22;
+  color: #ffffff;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: end;
+  transition: 400ms;
+}
+
+form a:hover {
+  background: #ffffff;
+  color: #ff3e84;
+  text-decoration: none;
+}
+
 form button {
   width: 150px;
   height: 40px;
@@ -180,10 +198,16 @@ form button {
   cursor: pointer;
   grid-column: 2;
   justify-self: end;
+  transition: 400ms;
 }
 
 form button:hover {
   background: #0984e3;
   color: #ffffff;
   text-decoration: none;
+}
+
+#modal.hide {
+  opacity: 0;
+  visibility: hidden;
 }
