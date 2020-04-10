@@ -4,6 +4,10 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+body.hideScroll {
+  overflow: hidden;
+}
+
 /* Container */
 #container {
   width: 90%;
@@ -116,18 +120,19 @@ p,
 
 /* Modal */
 #modal {
-  width: 100vw;
-  height: 100vh;
   background: #ff3e84;
   position: absolute;
   top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   display: flex;
   justify-content: center;
   transition: all 400ms;
 }
 
 #modal .content {
-  margin: 128px 0px 0px 0px;
+  margin-top: 5%;
   color: #ffffff;
 }
 
@@ -139,7 +144,7 @@ p,
 #modal .content form {
   width: 80%;
   max-width: 800px;
-  margin: 0 auto 0 auto;
+  margin: 0 auto 5% auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
@@ -210,4 +215,8 @@ form button:hover {
 #modal.hide {
   opacity: 0;
   visibility: hidden;
+}
+
+#modal.addScroll {
+  overflow: auto;
 }
