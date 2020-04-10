@@ -4,6 +4,10 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+body.hideScroll {
+  overflow: hidden;
+}
+
 /* Container */
 #container {
   width: 90%;
@@ -116,11 +120,12 @@ p,
 
 /* Modal */
 #modal {
-  width: 100vw;
-  height: 100vh;
   background: #ff3e84;
   position: absolute;
   top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   display: flex;
   justify-content: center;
   transition: all 400ms;
