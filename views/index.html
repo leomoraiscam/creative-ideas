@@ -45,62 +45,18 @@
       </section>
 
       <section id="last-ideias">
+        {% for ideia in ideias%}
         <div class="idea">
-          <img
-            src="https://image.flaticon.com/icons/svg/2729/2729007.svg"
-            alt="Imagem de curso de programação"
-          />
+          <img src="{{ideia.img}}" alt="Imagem de " {{idea.title}} />
 
           <div class="content">
-            <h3>Curso de programação</h3>
-            <p>Estudo</p>
-            <div class="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-              inventore voluptate! Facilis dolor harum esse libero
-              exercitationem eius, quod officiis quam pariatur sunt neque
-              aliquam repellendus. Cumque quia eius sit!
-            </div>
-            <a href="#">Ir para a ideia</a>
+            <h3>{{ideias.title}}</h3>
+            <p>{{ideias.category}}</p>
+            <div class="description">{{ideia.description}}</div>
+            <a href="{{ideia.url}}" target="_blank">Ir para a ideia</a>
           </div>
         </div>
-
-        <div class="idea">
-          <img
-            src="https://image.flaticon.com/icons/svg/2729/2729005.svg"
-            alt="Imagem de Exercícios"
-          />
-
-          <div class="content">
-            <h3>Execícios</h3>
-            <p>Saude</p>
-            <div class="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-              inventore voluptate! Facilis dolor harum esse libero
-              exercitationem eius, quod officiis quam pariatur sunt neque
-              aliquam repellendus. Cumque quia eius sit!
-            </div>
-            <a href="#">Ir para a ideia</a>
-          </div>
-        </div>
-
-        <div class="idea">
-          <img
-            src="https://image.flaticon.com/icons/svg/2729/2729027.svg "
-            alt="Imagem de Meditação"
-          />
-
-          <div class="content">
-            <h3>Meditação</h3>
-            <p>Mentalidade</p>
-            <div class="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-              inventore voluptate! Facilis dolor harum esse libero
-              exercitationem eius, quod officiis quam pariatur sunt neque
-              aliquam repellendus. Cumque quia eius sit!
-            </div>
-            <a href="#">Ir para a ideia</a>
-          </div>
-        </div>
+        {%endfor%}
       </section>
     </div>
 
