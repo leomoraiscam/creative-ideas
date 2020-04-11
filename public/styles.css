@@ -130,7 +130,7 @@ p,
 /* Modal */
 #modal {
   background: #ff3e84;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;

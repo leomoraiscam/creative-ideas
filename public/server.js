@@ -6,14 +6,15 @@ server.use(express.static("public"));
 
 nunjucks.configure("views", {
   express: server,
+  noCache: true,
 });
 
 server.get("/", function (req, res) {
-  return res.sendFile(__dirname + "/index.html");
+  return res.render("index.html");
 });
 
 server.get("/ideias", function (req, res) {
-  return res.sendFile(__dirname + "/ideias.html");
+  return res.render("ideias.html");
 });
 
 server.listen("3333");
