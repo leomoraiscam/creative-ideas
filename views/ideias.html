@@ -27,81 +27,18 @@
       </section>
       <main>
         <section id="ideias">
+          {% for idea in ideas%}
           <div class="idea">
-            <img
-              src="https://image.flaticon.com/icons/svg/2729/2729007.svg"
-              alt="Imagem de curso de programação"
-            />
+            <img src="{{idea.img}}" alt="Imagem de " {{idea.title}} />
 
             <div class="content">
-              <h3>Curso de programação</h3>
-              <p>Estudo</p>
-              <div class="description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                inventore voluptate! Facilis dolor harum esse libero
-                exercitationem eius, quod officiis quam pariatur sunt neque
-                aliquam repellendus. Cumque quia eius sit!
-              </div>
-              <a href="#">Ir para a ideia</a>
+              <h3>{{idea.title}}</h3>
+              <p>{{idea.category}}</p>
+              <div class="description">{{idea.description}}</div>
+              <a href="{{idea.url}}" target="_blank">Ir para a ideia</a>
             </div>
           </div>
-
-          <div class="idea">
-            <img
-              src="https://image.flaticon.com/icons/svg/2729/2729005.svg"
-              alt="Imagem de Exercícios"
-            />
-
-            <div class="content">
-              <h3>Execícios</h3>
-              <p>Saude</p>
-              <div class="description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                inventore voluptate! Facilis dolor harum esse libero
-                exercitationem eius, quod officiis quam pariatur sunt neque
-                aliquam repellendus. Cumque quia eius sit!
-              </div>
-              <a href="#">Ir para a ideia</a>
-            </div>
-          </div>
-
-          <div class="idea">
-            <img
-              src="https://image.flaticon.com/icons/svg/2729/2729027.svg "
-              alt="Imagem de Meditação"
-            />
-
-            <div class="content">
-              <h3>Meditação</h3>
-              <p>Mentalidade</p>
-              <div class="description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                inventore voluptate! Facilis dolor harum esse libero
-                exercitationem eius, quod officiis quam pariatur sunt neque
-                aliquam repellendus. Cumque quia eius sit!
-              </div>
-              <a href="#">Ir para a ideia</a>
-            </div>
-          </div>
-
-          <div class="idea">
-            <img
-              src="https://image.flaticon.com/icons/svg/2729/2729032.svg"
-              alt="Imagem de Karaoke"
-            />
-
-            <div class="content">
-              <h3>Karaoke</h3>
-              <p>Diversão</p>
-              <div class="description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                inventore voluptate! Facilis dolor harum esse libero
-                exercitationem eius, quod officiis quam pariatur sunt neque
-                aliquam repellendus. Cumque quia eius sit!
-              </div>
-              <a href="#">Ir para a ideia</a>
-            </div>
-          </div>
+          {%endfor%}
         </section>
       </main>
 

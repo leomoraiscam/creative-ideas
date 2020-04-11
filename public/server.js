@@ -2,7 +2,7 @@ const express = require("express");
 const nunjucks = require("nunjucks");
 const server = express();
 
-const ideias = [
+const ideas = [
   {
     img: "https://image.flaticon.com/icons/svg/2729/2729007.svg",
     title: "Curso de programação",
@@ -45,11 +45,19 @@ nunjucks.configure("views", {
 });
 
 server.get("/", function (req, res) {
-  return res.render("index.html", { ideias });
+  const reversedIdeas = [...ideas].reverse();
+  let lastIdeas = [];
+  for (let idea of reversedIdeas) {
+    if (lastIdeas.length < 2) {
+      lastIdeas.push(idea);
+    }
+  }
+
+  return res.render("index.html", { ideas: lastIdeas });
 });
 
 server.get("/ideias", function (req, res) {
-  return res.render("ideias.html");
+  return res.render("ideias.html", { ideas });
 });
 
 server.listen("3333");

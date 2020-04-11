@@ -45,15 +45,15 @@
       </section>
 
       <section id="last-ideias">
-        {% for ideia in ideias%}
+        {% for idea in ideas%}
         <div class="idea">
-          <img src="{{ideia.img}}" alt="Imagem de " {{idea.title}} />
+          <img src="{{idea.img}}" alt="Imagem de " {{idea.title}} />
 
           <div class="content">
-            <h3>{{ideias.title}}</h3>
-            <p>{{ideias.category}}</p>
-            <div class="description">{{ideia.description}}</div>
-            <a href="{{ideia.url}}" target="_blank">Ir para a ideia</a>
+            <h3>{{idea.title}}</h3>
+            <p>{{idea.category}}</p>
+            <div class="description">{{idea.description}}</div>
+            <a href="{{idea.url}}" target="_blank">Ir para a ideia</a>
           </div>
         </div>
         {%endfor%}
