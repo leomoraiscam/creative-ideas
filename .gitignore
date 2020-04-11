@@ -1,2 +1,5 @@
+<<<<<<< HEAD
 ./node_modules
 node_modules  
+=======
+>>>>>>> parent of 8aaa534... Adicionando o arquivo package json ao projeto, instalando o express e implementando regras ao gitignore| Iniciando o servidor
