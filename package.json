@@ -2,10 +2,10 @@
   "name": "DesenvolvimentoApp",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start":"node public/server.js",
-    "dev": "nodemon public/server.js"
+    "start": "node public/server.js",
+    "dev": "nodemon App/public/server.js"
   },
   "repository": {
     "type": "git",
