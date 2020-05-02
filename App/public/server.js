@@ -66,4 +66,6 @@ server.post("/", function (req, res) {
   });
 });
 
-server.listen("3333");
+server.listen("3000", () => {
+  console.log("Server is running");
+});
