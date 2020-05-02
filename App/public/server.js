@@ -1,12 +1,12 @@
 const express = require("express");
 const server = express();
-const db = require("./db");
+const db = require("../database/db");
 const nunjucks = require("nunjucks");
 
-server.use(express.static("public"));
+server.use(express.static("App/public"));
 server.use(express.urlencoded({ extended: true }));
 
-nunjucks.configure("views", {
+nunjucks.configure(`App/views`, {
   express: server,
   noCache: true,
 });
@@ -55,8 +55,6 @@ server.post("/", function (req, res) {
     req.body.description,
     req.body.link,
   ];
-
-  console.log(values);
 
   db.run(query, values, function (err) {
     if (err) {
