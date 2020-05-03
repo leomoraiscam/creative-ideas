@@ -1,10 +1,10 @@
 {
-  "name": "DesenvolvimentoApp",
+  "name": "ideias-criativas",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node public/server.js",
+    "start": "node App/public/server.js",
     "dev": "nodemon App/public/server.js"
   },
   "repository": {
