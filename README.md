@@ -26,7 +26,7 @@ Veja todas as ideias adicionadas, acesse as ideias a qual preferir e adicione um
 
 # 🔖 Sobre
 
-O projeto **Ideias criativas** é uma aplicação de compartilhamento ideias do que se está fazendo nos tempos de quarentena que foi criado dentro de um workshop da semana Omnistack com o intuito de colocar em prática todo o conteúdo estudado.
+O projeto **Ideias criativas** é uma aplicação de compartilhamento de ideias do que se está fazendo nos tempos da crise do CIVID-19, no qual o mesmo foi criado dentro de um workshop da semana Omnistack com o intuito de colocar em prática o conteúdo estudado.
 
 ---
 
