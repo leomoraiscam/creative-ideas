@@ -6,13 +6,13 @@
 
 ### Página principal
 
-Veja as ultimas ideias adicionadas, acesse as ideias a qual preferir e adicione uma ideia.
+ - Veja as ultimas ideias adicionadas, acesse as ideias a qual preferir e adicione uma ideia.
 
   <img src='https://ik.imagekit.io/xa9e0paa00/Ideias_criativas_-_Application/Captura_de_tela_de_2020-05-03_10-44-51_lSV5XPbYI.png'>
 
-### Todas as ideias
+### Página de acesso as ideias
 
-Veja todas as ideias adicionadas, acesse as ideias a qual preferir e adicione uma ideia.
+ - Veja todas as ideias adicionadas, acesse as ideias a qual preferir e adicione uma ideia.
 
 <h1 align='center' wi>
   <img src='https://ik.imagekit.io/xa9e0paa00/Ideias_criativas_-_Application/Captura_de_tela_de_2020-05-03_10-44-54_-dJ7TQkz_.png' />
